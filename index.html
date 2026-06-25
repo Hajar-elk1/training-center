@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vantage Academy — Professional Career Training & Mentorship</title>
+  <meta name="description" content="Transform your career with expert mentorship at Vantage Academy. 15,000+ professionals trained, 98% employment rate. Join our world-class career programs." />
+  <link rel="stylesheet" href="style.css?v=8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       SCROLL PROGRESS BAR
+  ════════════════════════════════════════════════ -->
+  <div id="progress-bar"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════ -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Vantage<span>.</span></a>
+      <div class="nav-links" role="list">
+        <a href="index.html" role="listitem">Home</a>
+        <a href="#programs" role="listitem">Programs</a>
+        <a href="#why-us" role="listitem">Why Us</a>
+        <a href="about.html" role="listitem">About</a>
+        <a href="contact.html" role="listitem">Contact</a>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#why-us">Why Us</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary btn-lg" style="margin-top:24px">Enroll Now</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO  — typographic, no SaaS dashboard
+  ════════════════════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-ring"  aria-hidden="true"></div>
+    <div class="hero-ring-2" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+
+      <!-- ── Left column: existing content, untouched ── -->
+      <div class="hero-content">
+        <p class="hero-eyebrow">Professional Career Training</p>
+
+        <h1 class="hero-title">
+          <span class="hw" style="--wi:0">Transform</span>
+          <span class="hw" style="--wi:1">Your</span>
+          <span class="hw" style="--wi:2">Career</span><br>
+          <span class="hw" style="--wi:3">With</span>
+          <span class="hw accent" style="--wi:4">Expert</span>
+          <span class="hw" style="--wi:5">Mentorship.</span>
+        </h1>
+
+        <p class="hero-desc">
+          Hands-on training delivered by active industry practitioners. Get the skills,
+          portfolio, and employer connections that actually land you the job.
+        </p>
+
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-arrow-right"></i> Start Your Journey
+          </a>
+          <a href="#programs" class="btn btn-outline btn-lg">View Programs</a>
+        </div>
+
+        <div class="hero-trust" aria-label="Key statistics">
+          <div class="ht-stat">
+            <strong>15,000+</strong>
+            <span>Graduates</span>
+          </div>
+          <div class="ht-sep" aria-hidden="true"></div>
+          <div class="ht-stat">
+            <strong>4.9 / 5</strong>
+            <span>Avg. Rating</span>
+          </div>
+          <div class="ht-sep" aria-hidden="true"></div>
+          <div class="ht-stat">
+            <strong>98%</strong>
+            <span>Employed</span>
+          </div>
+          <div class="ht-sep" aria-hidden="true"></div>
+          <div class="ht-stat">
+            <strong>12 yrs</strong>
+            <span>Excellence</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Right column: asymmetric photo collage ── -->
+      <div class="hero-collage" aria-label="Training and mentorship photos">
+
+        <button class="hc-btn hc-prev" id="hcPrev" aria-label="Previous photo">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+
+        <!-- Tall left image -->
+        <div class="hc-rail">
+          <div class="hc-frame hc-frame-main">
+            <img id="hcMain" class="hc-img"
+                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=900&auto=format&fit=crop"
+                 alt="Mentor guiding a student through a project" />
+          </div>
+        </div>
+
+        <!-- Two smaller images stacked right -->
+        <div class="hc-stack">
+          <div class="hc-frame hc-frame-sub">
+            <img id="hcTop" class="hc-img"
+                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+                 alt="Professionals collaborating at a workshop table" />
+          </div>
+          <div class="hc-frame hc-frame-sub">
+            <img id="hcBot" class="hc-img"
+                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop"
+                 alt="Confident professional preparing for a career change" />
+          </div>
+        </div>
+
+        <button class="hc-btn hc-next" id="hcNext" aria-label="Next photo">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       STATS STATEMENT  — dark, counters
+  ════════════════════════════════════════════════ -->
+  <section class="stats-statement" id="stats" aria-label="Key statistics">
+    <div class="container">
+      <div class="ss-grid">
+        <div class="ss-item reveal" data-delay="1">
+          <div class="ss-num"><span class="counter" data-target="15000">0</span>+</div>
+          <div class="ss-label">Professionals Trained</div>
+        </div>
+        <div class="ss-item reveal" data-delay="2">
+          <div class="ss-num"><span class="counter" data-target="98">0</span>%</div>
+          <div class="ss-label">Employment Rate</div>
+        </div>
+        <div class="ss-item reveal" data-delay="3">
+          <div class="ss-num"><span class="counter" data-target="50">0</span>+</div>
+          <div class="ss-label">Expert Trainers</div>
+        </div>
+        <div class="ss-item reveal" data-delay="4">
+          <div class="ss-num"><span class="counter" data-target="12">0</span>+</div>
+          <div class="ss-label">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT INTRO  — asymmetric, no icon soup
+  ════════════════════════════════════════════════ -->
+  <section class="about-intro" id="about-intro" aria-labelledby="about-intro-heading">
+    <div class="container">
+      <div class="about-intro-grid">
+        <div class="about-intro-visual">
+          <div class="about-card-main reveal-left">
+            <div class="acm-photo">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+                   alt="" aria-hidden="true" loading="lazy" />
+            </div>
+            <div class="acm-overlay"></div>
+            <div class="acm-body">
+              <div class="about-card-main-title">Built for Real-World Outcomes</div>
+              <ul class="acm-list">
+                <li><i class="fa-solid fa-check"></i>Internationally recognized certifications</li>
+                <li><i class="fa-solid fa-check"></i>Instructors active in industry today</li>
+                <li><i class="fa-solid fa-check"></i>Portfolio-ready projects from day one</li>
+                <li><i class="fa-solid fa-check"></i>Placement support &amp; employer network</li>
+                <li><i class="fa-solid fa-check"></i>Online, in-person, and hybrid delivery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-mini-stats">
+            <div class="ams-item reveal" data-delay="1">
+              <div class="ams-num">12+</div>
+              <div class="ams-lbl">Years of excellence</div>
+            </div>
+            <div class="ams-item reveal" data-delay="2">
+              <div class="ams-num">200+</div>
+              <div class="ams-lbl">Employer partners</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-intro-content">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title" id="about-intro-heading">
+            Training That Gets You <span>Hired</span>
+          </h2>
+          <p class="section-sub">
+            Vantage Academy has spent 12 years refining one thing: connecting ambitious
+            professionals with the skills, credentials, and networks that employers
+            actually want. No filler. No theory-only modules. Just results.
+          </p>
+          <ul class="about-points">
+            <li>Internationally recognized certifications</li>
+            <li>Mentorship from active industry practitioners</li>
+            <li>Real-world, portfolio-ready projects</li>
+            <li>Career placement support &amp; employer network</li>
+            <li>Online, in-person, and hybrid delivery</li>
+          </ul>
+          <div style="margin-top: 32px;">
+            <a href="about.html" class="btn btn-primary">
+              <i class="fa-solid fa-arrow-right"></i> Our Story
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       PROGRAMS  — 3D fanned card stack
+  ════════════════════════════════════════════════ -->
+  <section class="programs" id="programs" aria-labelledby="programs-heading">
+    <div class="container">
+      <div class="programs-header">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title" id="programs-heading">
+          6 Programs. <span>Built Around Results.</span>
+        </h2>
+        <p class="section-sub">
+          Practical skills training for the modern workplace — every program is built
+          around employer demand and designed to get you job-ready fast.
+        </p>
+      </div>
+
+      <!-- 3D fan stage: click a card or use arrow keys / swipe to navigate -->
+      <div class="programs-fan-stage" id="fanStage" tabindex="0"
+           role="region" aria-label="Program cards — click or use arrow keys to navigate">
+        <div class="programs-fan-track" id="fanTrack">
+
+          <article class="fan-card" data-index="0" tabindex="0" aria-label="Web Development">
+            <div class="fc-bg">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop"
+                   alt="" aria-hidden="true" loading="lazy" />
+            </div>
+            <div class="fc-overlay"></div>
+            <div class="fc-content">
+              <span class="fc-tag">Most Popular</span>
+              <h3 class="fc-title">Web Development</h3>
+              <p class="fc-desc">HTML, CSS, JavaScript, and WordPress — build functional websites from scratch without needing a developer on call.</p>
+              <div class="fc-meta">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 weeks</span>
+                <span><i class="fa-solid fa-user-group" aria-hidden="true"></i> Cohort</span>
+              </div>
+              <a href="contact.html" class="fc-cta" tabindex="-1">
+                Enroll Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="fan-card" data-index="1" tabindex="0" aria-label="Digital Marketing">
+            <div class="fc-bg">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop"
+                   alt="" aria-hidden="true" loading="lazy" />
+            </div>
+            <div class="fc-overlay"></div>
+            <div class="fc-content">
+              <span class="fc-tag">In-Demand</span>
+              <h3 class="fc-title">Digital Marketing</h3>
+              <p class="fc-desc">SEO, social media, paid ads, and email campaigns — become the marketer every growing business is hiring for.</p>
+              <div class="fc-meta">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 weeks</span>
+                <span><i class="fa-solid fa-laptop" aria-hidden="true"></i> Online</span>
+              </div>
+              <a href="contact.html" class="fc-cta" tabindex="-1">
+                Enroll Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="fan-card" data-index="2" tabindex="0" aria-label="Data Analysis">
+            <div class="fc-bg">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop"
+                   alt="" aria-hidden="true" loading="lazy" />
+            </div>
+            <div class="fc-overlay"></div>
+            <div class="fc-content">
+              <span class="fc-tag">Fast-Track</span>
+              <h3 class="fc-title">Data Analysis</h3>
+              <p class="fc-desc">Excel, Power BI, and Google Sheets — turn raw numbers into clear reports and decisions that get noticed.</p>
+              <div class="fc-meta">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 10 weeks</span>
+                <span><i class="fa-solid fa-laptop" aria-hidden="true"></i> Online</span>
+              </div>
+              <a href="contact.html" class="fc-cta" tabindex="-1">
+                Enroll Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="fan-card" data-index="3" tabindex="0" aria-label="Graphic Design">
+            <div class="fc-bg">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600&auto=format&fit=crop"
+                   alt="" aria-hidden="true" loading="lazy" />
+            </div>
+            <div class="fc-overlay"></div>
+            <div class="fc-content">
+              <span class="fc-tag">Creative</span>
+              <h3 class="fc-title">Graphic Design</h3>
+              <p class="fc-desc">Canva and Adobe Illustrator for brand identity, social content, and visuals that communicate and convert.</p>
+              <div class="fc-meta">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 weeks</span>
+                <span><i class="fa-solid fa-laptop" aria-hidden="true"></i> Online</span>
+              </div>
+              <a href="contact.html" class="fc-cta" tabindex="-1">
+                Enroll Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="fan-card" data-index="4" tabindex="0" aria-label="AI Tools for Work">
+            <div class="fc-bg">
+              <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=600&auto=format&fit=crop"
+                   alt="" aria-hidden="true" loading="lazy" />
+            </div>
+            <div class="fc-overlay"></div>
+            <div class="fc-content">
+              <span class="fc-tag">Cutting-Edge</span>
+              <h3 class="fc-title">AI Tools for Work</h3>
+              <p class="fc-desc">ChatGPT, Copilot, and automation tools — work faster and smarter while others are still catching up.</p>
+              <div class="fc-meta">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 weeks</span>
+                <span><i class="fa-solid fa-laptop" aria-hidden="true"></i> Online</span>
+              </div>
+              <a href="contact.html" class="fc-cta" tabindex="-1">
+                Enroll Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="fan-card" data-index="5" tabindex="0" aria-label="E-commerce">
+            <div class="fc-bg">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=600&auto=format&fit=crop"
+                   alt="" aria-hidden="true" loading="lazy" />
+            </div>
+            <div class="fc-overlay"></div>
+            <div class="fc-content">
+              <span class="fc-tag">High-Demand</span>
+              <h3 class="fc-title">E-commerce</h3>
+              <p class="fc-desc">Shopify, product strategy, and customer acquisition — launch or grow an online store that actually sells.</p>
+              <div class="fc-meta">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 weeks</span>
+                <span><i class="fa-solid fa-user-group" aria-hidden="true"></i> Cohort</span>
+              </div>
+              <a href="contact.html" class="fc-cta" tabindex="-1">
+                Enroll Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /fan-track -->
+      </div><!-- /fan-stage -->
+
+      <!-- Dots + mobile prev/next -->
+      <div class="fan-nav">
+        <button class="fan-nav-btn" id="fanPrev" aria-label="Previous program">
+          <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <div class="fan-dots" id="fanDots" role="tablist" aria-label="Program navigation"></div>
+        <button class="fan-nav-btn" id="fanNext" aria-label="Next program">
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="programs-cta">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-graduation-cap"></i> Apply to a Program
+        </a>
+        <a href="contact.html" class="btn btn-outline btn-lg" style="margin-left:12px">
+          Book a Free Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       WHY CHOOSE US  — dark, asymmetric, numbered text list
+  ════════════════════════════════════════════════ -->
+  <section class="why-us" id="why-us" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="why-grid">
+
+        <div class="why-lead reveal-left">
+          <div class="why-lead-eyebrow">Why Vantage</div>
+          <h2 class="why-lead-title" id="why-heading">
+            The Training Centre <span>Employers</span> Keep Sending Us Back To
+          </h2>
+          <p class="why-lead-text">
+            We could list the same reasons every training provider uses. Instead,
+            here's what our 15,000 graduates and 200+ hiring partners actually say.
+          </p>
+          <a href="about.html" class="why-lead-link">
+            Read the full story <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="why-reasons">
+          <div class="why-reason reveal" data-delay="1">
+            <div class="wr-num">01</div>
+            <div>
+              <div class="wr-title">Practitioners, Not Lecturers</div>
+              <p class="wr-desc">Every instructor is currently active in their field. Your Python teacher ships code at work today. Your marketing mentor runs live campaigns.</p>
+            </div>
+          </div>
+          <div class="why-reason reveal" data-delay="2">
+            <div class="wr-num">02</div>
+            <div>
+              <div class="wr-title">Outcomes Are Our Metric</div>
+              <p class="wr-desc">We don't measure completion rates — we measure employment rates. 98% of our graduates land roles within 90 days. That keeps us honest.</p>
+            </div>
+          </div>
+          <div class="why-reason reveal" data-delay="3">
+            <div class="wr-num">03</div>
+            <div>
+              <div class="wr-title">Real Projects, Real Portfolio</div>
+              <p class="wr-desc">No toy datasets or made-up case studies. Every project uses real business contexts so your portfolio speaks to actual employers.</p>
+            </div>
+          </div>
+          <div class="why-reason reveal" data-delay="4">
+            <div class="wr-num">04</div>
+            <div>
+              <div class="wr-title">Placement Support Built In</div>
+              <p class="wr-desc">Resume review, mock interviews, and direct introductions to our 200+ employer partners. Your job search starts before graduation.</p>
+            </div>
+          </div>
+          <div class="why-reason reveal" data-delay="5">
+            <div class="wr-num">05</div>
+            <div>
+              <div class="wr-title">Flexible Without Compromise</div>
+              <p class="wr-desc">Full-time, part-time, online, and in-person — every format delivers the same rigorous curriculum and mentorship access.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       HOW IT WORKS  — vertical numbered list
+  ════════════════════════════════════════════════ -->
+  <section class="approach" id="approach" aria-labelledby="approach-heading">
+    <div class="container">
+      <div class="approach-header">
+        <span class="section-tag">The Process</span>
+        <h2 class="section-title" id="approach-heading">
+          From Day One to <span>First Day on the Job</span>
+        </h2>
+        <p class="section-sub">
+          A clear, six-step journey — from your first consultation to your first paycheck in a new role.
+        </p>
+      </div>
+
+      <div class="approach-list">
+        <div class="approach-step reveal" data-delay="1">
+          <div class="as-num">01</div>
+          <div class="as-content">
+            <div class="as-title">Free Career Consultation</div>
+            <p class="as-desc">A 30-minute call with a career advisor to understand where you are now, where you want to go, and which program gets you there fastest.</p>
+          </div>
+        </div>
+        <div class="approach-step reveal" data-delay="2">
+          <div class="as-num">02</div>
+          <div class="as-content">
+            <div class="as-title">Tailored Learning Plan</div>
+            <p class="as-desc">Your mentor helps you set clear milestones, choose your schedule format, and align the curriculum to your specific career target — not a generic syllabus.</p>
+          </div>
+        </div>
+        <div class="approach-step reveal" data-delay="3">
+          <div class="as-num">03</div>
+          <div class="as-content">
+            <div class="as-title">Learn from Active Practitioners</div>
+            <p class="as-desc">Instructor-led sessions cover the tools and workflows used on the job today. Live Q&amp;A, code reviews, and real feedback — not recorded videos.</p>
+          </div>
+        </div>
+        <div class="approach-step reveal" data-delay="4">
+          <div class="as-num">04</div>
+          <div class="as-content">
+            <div class="as-title">Build a Portfolio Under Mentorship</div>
+            <p class="as-desc">Every project is reviewed by your mentor with the same lens as a professional code review or creative brief — so your portfolio tells a credible story to employers.</p>
+          </div>
+        </div>
+        <div class="approach-step reveal" data-delay="5">
+          <div class="as-num">05</div>
+          <div class="as-content">
+            <div class="as-title">Earn Your Certification</div>
+            <p class="as-desc">Internationally recognized certification upon completion — plus prep support for relevant industry exams where applicable.</p>
+          </div>
+        </div>
+        <div class="approach-step reveal" data-delay="6">
+          <div class="as-num">06</div>
+          <div class="as-content">
+            <div class="as-title">Career Placement Support</div>
+            <p class="as-desc">Resume refinement, interview coaching, and warm introductions to our employer partner network. Your placement advisor stays with you until you land.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       TESTIMONIALS
+  ════════════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testi-heading">
+    <div class="container">
+      <div class="testimonials-header">
+        <span class="section-tag">Graduate Voices</span>
+        <h2 class="section-title" id="testi-heading">
+          Real Results From <span>Real People</span>
+        </h2>
+        <p class="section-sub">15,000+ graduates across 8 programs. Here's what some of them say.</p>
+      </div>
+
+      <div class="testimonials-slider" aria-label="Testimonials">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="testi-quote-icon">"</div>
+            <div class="testi-stars" aria-label="5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">I went from a retail manager to a data analyst in four months. The SQL and Power BI skills I built here were the first things my hiring manager mentioned.</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-a" aria-hidden="true">SK</div>
+              <div class="testi-info">
+                <strong>Sarah K.</strong>
+                <span>Data Analyst — Finance Sector</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote-icon">"</div>
+            <div class="testi-stars" aria-label="5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">The mentor I was paired with reviewed my code like a senior engineer would. That's what separated Vantage from every other bootcamp I looked at.</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-b" aria-hidden="true">JM</div>
+              <div class="testi-info">
+                <strong>James M.</strong>
+                <span>Full-Stack Developer — Tech Startup</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote-icon">"</div>
+            <div class="testi-stars" aria-label="5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">Landed my UX role 3 weeks after finishing. The portfolio projects were the conversation starters in every single interview I had.</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-c" aria-hidden="true">FA</div>
+              <div class="testi-info">
+                <strong>Fatima A.</strong>
+                <span>UX Designer — Agency</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote-icon">"</div>
+            <div class="testi-stars" aria-label="5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">Did the Digital Marketing program part-time while working full-time. The flexible schedule was real — I never had to choose between the job and the course.</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-d" aria-hidden="true">RO</div>
+              <div class="testi-info">
+                <strong>Ravi O.</strong>
+                <span>Marketing Manager — E-commerce</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote-icon">"</div>
+            <div class="testi-stars" aria-label="5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-text">My placement advisor connected me directly to three employers after graduation. One of those calls turned into my current role. That network is priceless.</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-e" aria-hidden="true">LT</div>
+              <div class="testi-info">
+                <strong>Layla T.</strong>
+                <span>Cloud Engineer — Enterprise Consulting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-controls" aria-label="Testimonial navigation">
+        <button class="testi-btn" id="testiPrev" aria-label="Previous testimonial">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="testi-dots" id="testiDots" role="tablist"></div>
+        <button class="testi-btn" id="testiNext" aria-label="Next testimonial">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       NEWSLETTER  — dark section
+  ════════════════════════════════════════════════ -->
+  <section class="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div>
+          <span class="newsletter-badge">
+            <i class="fa-solid fa-envelope"></i> Free Resource
+          </span>
+          <h2 class="newsletter-title" id="newsletter-heading">
+            Career Intel, Straight to Your Inbox
+          </h2>
+          <p class="newsletter-desc">
+            Monthly insights on high-demand skills, salary benchmarks,
+            hiring trends, and exclusive early access to new programs.
+          </p>
+          <div class="newsletter-perks">
+            <div class="newsletter-perk"><i class="fa-solid fa-check"></i> No spam — ever</div>
+            <div class="newsletter-perk"><i class="fa-solid fa-check"></i> Unsubscribe any time</div>
+            <div class="newsletter-perk"><i class="fa-solid fa-check"></i> 4,200+ subscribers already</div>
+          </div>
+        </div>
+        <div class="newsletter-form-wrap">
+          <form class="sub-form" id="subForm" novalidate aria-label="Newsletter subscription">
+            <div class="sub-field">
+              <label for="sub-name">Your Name</label>
+              <input type="text" id="sub-name" placeholder="Alex Johnson" required />
+            </div>
+            <div class="sub-field">
+              <label for="sub-email">Email Address</label>
+              <input type="email" id="sub-email" placeholder="alex@example.com" required />
+            </div>
+            <button type="submit" class="btn btn-gold">
+              <i class="fa-solid fa-paper-plane"></i> Subscribe Free
+            </button>
+            <p class="sub-note">Join 4,200+ professionals already subscribed.</p>
+            <div class="form-notif" id="subNotif" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FINAL CTA
+  ════════════════════════════════════════════════ -->
+  <section class="final-cta" aria-labelledby="final-cta-heading">
+    <div class="container">
+      <div class="final-cta-inner">
+        <span class="section-tag" style="justify-content:center">Take the First Step</span>
+        <h2 class="section-title on-light" id="final-cta-heading">
+          Your Next Career Move <span>Starts Here</span>
+        </h2>
+        <p class="section-sub" style="margin-inline:auto;text-align:center;max-width:520px">
+          Book a free 30-minute consultation with a career advisor. No pressure, no obligations — just a clear plan.
+        </p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg magnetic">
+            <i class="fa-solid fa-calendar-check"></i> Book Free Consultation
+          </a>
+          <a href="#programs" class="btn btn-outline btn-lg magnetic">Browse Programs</a>
+        </div>
+        <p class="cta-note">
+          <i class="fa-solid fa-lock"></i> No commitment required &nbsp;·&nbsp;
+          Spots are limited
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Vantage<span>.</span></div>
+          <p class="footer-tagline">
+            Transforming ambitious professionals into industry-ready talent
+            since 2012. 15,000+ careers. 200+ employer partners.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="footer-social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li><a href="#programs">Web Development</a></li>
+            <li><a href="#programs">Digital Marketing</a></li>
+            <li><a href="#programs">Data Analysis</a></li>
+            <li><a href="#programs">Graphic Design</a></li>
+            <li><a href="#programs">AI Tools for Work</a></li>
+            <li><a href="#programs">E-commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Trainers</a></li>
+            <li><a href="about.html#mvv">Mission &amp; Values</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>123 Training Street, Business District, City, Country</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+1 (800) 123-4567</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>hello@vantageacademy.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon–Fri 9am–6pm &nbsp;·&nbsp; Sat 10am–2pm</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2024 Vantage Academy. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

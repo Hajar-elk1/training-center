@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Vantage Academy — Book a Free Consultation</title>
+  <meta name="description" content="Get in touch with Vantage Academy. Book a free career consultation, ask about our programs, or visit us in person. We respond within one business day." />
+  <link rel="stylesheet" href="style.css?v=7" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════ -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Vantage<span>.</span></a>
+      <div class="nav-links" role="list">
+        <a href="index.html" role="listitem">Home</a>
+        <a href="index.html#programs" role="listitem">Programs</a>
+        <a href="index.html#why-us" role="listitem">Why Us</a>
+        <a href="about.html" role="listitem">About</a>
+        <a href="contact.html" role="listitem">Contact</a>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta">Enroll Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="index.html#programs">Programs</a>
+    <a href="index.html#why-us">Why Us</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary btn-lg" style="margin-top:24px">Enroll Now</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       PAGE HERO  — dark
+  ════════════════════════════════════════════════ -->
+  <section class="page-hero" aria-label="Contact Vantage Academy">
+    <div class="page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Contact</span>
+      </nav>
+      <h1 class="page-hero-title">
+        Let's Start a <span>Conversation</span>
+      </h1>
+      <p class="page-hero-desc">
+        Book a free 30-minute career consultation, ask about a specific program,
+        or just drop us a note. We respond within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════════════════ -->
+  <section class="contact-section" id="contact-form" aria-labelledby="contact-section-heading">
+    <div class="container">
+
+      <!-- Info cards -->
+      <div class="contact-info-grid">
+        <div class="ci-card reveal" data-delay="1">
+          <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="ci-title">Visit Us</div>
+          <p class="ci-detail">123 Training Street<br>Business District, City<br>Country, ZIP 00000</p>
+        </div>
+        <div class="ci-card reveal" data-delay="2">
+          <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="ci-title">Call or WhatsApp</div>
+          <p class="ci-detail">
+            <a href="tel:+18001234567">+1 (800) 123-4567</a><br>
+            <a href="https://wa.me/18001234567">+1 (800) 123-4567 (WhatsApp)</a><br>
+            Mon–Fri 9am–6pm
+          </p>
+        </div>
+        <div class="ci-card reveal" data-delay="3">
+          <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="ci-title">Email Us</div>
+          <p class="ci-detail">
+            <a href="mailto:hello@vantageacademy.com">hello@vantageacademy.com</a><br>
+            Admissions: <a href="mailto:admissions@vantageacademy.com">admissions@vantageacademy.com</a><br>
+            We reply within 1 business day.
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick action buttons -->
+      <div class="contact-quick-actions" style="max-width:520px;margin:0 auto 48px" aria-label="Quick contact options">
+        <a href="tel:+18001234567" class="contact-quick-btn btn-phone">
+          <div class="cqb-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="cqb-text">
+            <strong>Call Now</strong>
+            <span>+1 (800) 123-4567</span>
+          </div>
+        </a>
+        <a href="https://wa.me/18001234567" class="contact-quick-btn btn-wa" target="_blank" rel="noopener">
+          <div class="cqb-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="cqb-text">
+            <strong>WhatsApp</strong>
+            <span>Chat instantly</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Form + Map -->
+      <div class="contact-main">
+        <div class="contact-form-wrap reveal-left">
+          <div class="contact-form-title">Send Us a Message</div>
+          <p class="contact-form-desc">Tell us about your goals and we'll get back to you with the best path forward.</p>
+
+          <form id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-first">First Name <span aria-hidden="true" style="color:var(--red)">*</span></label>
+                <input type="text" id="cf-first" placeholder="Alex" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-last">Last Name <span aria-hidden="true" style="color:var(--red)">*</span></label>
+                <input type="text" id="cf-last" placeholder="Johnson" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cf-email">Email Address <span aria-hidden="true" style="color:var(--red)">*</span></label>
+              <input type="email" id="cf-email" placeholder="alex@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="cf-phone">Phone Number (optional)</label>
+              <input type="tel" id="cf-phone" placeholder="+1 (555) 000-0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="cf-program">Program of Interest</label>
+              <select id="cf-program">
+                <option value="">Select a program…</option>
+                <option>Web Development</option>
+                <option>Digital Marketing</option>
+                <option>Data Analysis</option>
+                <option>Graphic Design</option>
+                <option>AI Tools for Work</option>
+                <option>E-commerce</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cf-message">Message <span aria-hidden="true" style="color:var(--red)">*</span></label>
+              <textarea id="cf-message" placeholder="Tell us about your current situation and your goals…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-notif" id="contactNotif" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="contact-map-wrap reveal-right">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.95373531531672!3d-37.816279979751834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1474987681349"
+              title="Vantage Academy Location"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <div class="hours-card">
+            <div class="hours-title">
+              <i class="fa-regular fa-clock"></i> Opening Hours
+            </div>
+            <div class="hours-list">
+              <div class="hours-row">
+                <span class="day">Monday – Thursday</span>
+                <span class="time">9:00 AM – 6:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Friday</span>
+                <span class="time">9:00 AM – 5:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Saturday</span>
+                <span class="time">10:00 AM – 2:00 PM</span>
+              </div>
+              <div class="hours-row closed">
+                <span class="day">Sunday</span>
+                <span class="time">Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FAQ  — dark section
+  ════════════════════════════════════════════════ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="faq-header">
+        <span class="section-tag on-dk">Common Questions</span>
+        <h2 class="section-title on-dark" id="faq-heading">
+          Frequently Asked <span>Questions</span>
+        </h2>
+        <p class="section-sub on-dark" style="margin-inline:auto">
+          Everything you need to know before booking your consultation.
+        </p>
+      </div>
+
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-q">Do I need prior experience to enroll?</span>
+            <span class="faq-chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-body" aria-hidden="true">
+            <div class="faq-body-inner">
+              Most programs are designed for motivated beginners, though some (like AI &amp; ML) benefit from basic numeracy. In your free consultation, we'll assess your starting point honestly and place you in the right cohort. No entry exam — just a genuine conversation.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-q">How long are the programs and what's the weekly time commitment?</span>
+            <span class="faq-chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-body" aria-hidden="true">
+            <div class="faq-body-inner">
+              Programs run from 8 to 16 weeks depending on the track. Full-time formats require 30–35 hours per week; part-time formats need 15–18 hours. All formats are designed to work around existing employment — the curriculum is the same regardless of format.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-q">What is the tuition fee and are payment plans available?</span>
+            <span class="faq-chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-body" aria-hidden="true">
+            <div class="faq-body-inner">
+              Fees vary by program — typically between $2,400 and $5,200. We offer 3 and 6-month payment plans with no interest. Some programs also qualify for corporate training budgets. Reach out and we'll find a structure that works for your situation.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-q">Are the certifications internationally recognized?</span>
+            <span class="faq-chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-body" aria-hidden="true">
+            <div class="faq-body-inner">
+              Yes. All Vantage certifications are accredited and recognized by employers in 35+ countries. Our certificates are paired with portfolio work and skills assessments that employers in our network actively reference during hiring.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-q">What does career placement support actually look like?</span>
+            <span class="faq-chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-body" aria-hidden="true">
+            <div class="faq-body-inner">
+              It starts before you graduate. You get: a dedicated placement advisor, professional CV review, three rounds of mock interviews, portfolio review with feedback, and direct warm introductions to employers in our network. Your advisor stays engaged until you've accepted an offer.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-q">Can I attend online if I'm not based locally?</span>
+            <span class="faq-chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-body" aria-hidden="true">
+            <div class="faq-body-inner">
+              Absolutely. All 6 programs are available fully online with live sessions (not pre-recorded). Every format — online or in-person — includes the same mentor access, project reviews, and career placement support.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-q">How quickly do most graduates find employment?</span>
+            <span class="faq-chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-body" aria-hidden="true">
+            <div class="faq-body-inner">
+              Our 12-month tracked data shows 98% of graduates enter employment within 90 days of completing their program. The median is 42 days. Graduates who actively engage with placement support (portfolio review, mock interviews, employer introductions) typically land in 3–6 weeks.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FINAL CTA
+  ════════════════════════════════════════════════ -->
+  <section class="final-cta" aria-labelledby="final-cta-contact-heading">
+    <div class="container">
+      <div class="final-cta-inner">
+        <span class="section-tag" style="justify-content:center">Take the First Step</span>
+        <h2 class="section-title on-light" id="final-cta-contact-heading">
+          Still Have Questions? <span>Let's Talk.</span>
+        </h2>
+        <p class="section-sub" style="margin-inline:auto;text-align:center;max-width:500px">
+          Our career advisors are real people, not chatbots. Book a free call — no pitch, no pressure.
+        </p>
+        <div class="cta-actions">
+          <a href="#contact-form" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-calendar-check"></i> Book Free Consultation
+          </a>
+          <a href="index.html#programs" class="btn btn-outline btn-lg">Browse Programs</a>
+        </div>
+        <p class="cta-note"><i class="fa-solid fa-lock"></i> No commitment required &nbsp;·&nbsp; Spots are limited</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Vantage<span>.</span></div>
+          <p class="footer-tagline">
+            Transforming ambitious professionals into industry-ready talent
+            since 2012. 15,000+ careers. 200+ employer partners.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="footer-social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#programs">Web Development</a></li>
+            <li><a href="index.html#programs">Digital Marketing</a></li>
+            <li><a href="index.html#programs">Data Analysis</a></li>
+            <li><a href="index.html#programs">Graphic Design</a></li>
+            <li><a href="index.html#programs">AI Tools for Work</a></li>
+            <li><a href="index.html#programs">E-commerce</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Trainers</a></li>
+            <li><a href="about.html#mvv">Mission &amp; Values</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>123 Training Street, Business District, City, Country</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+1 (800) 123-4567</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>hello@vantageacademy.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon–Fri 9am–6pm &nbsp;·&nbsp; Sat 10am–2pm</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2024 Vantage Academy. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
